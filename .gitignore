@@ -1,4 +1,4 @@
-hardhat/node_modules
+**/node_modules
 hardhat/.env
 hardhat/coverage
 hardhat/coverage.json
