@@ -1,9 +1,10 @@
 **/node_modules
+.idea
+
+#Hardhat files
 hardhat/.env
 hardhat/coverage
 hardhat/coverage.json
 hardhat/typechain
-
-#Hardhat files
 hardhat/cache
 hardhat/artifacts
