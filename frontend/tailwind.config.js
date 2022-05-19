@@ -1,5 +1,10 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js}'],
-  theme: {},
+  theme: {
+    minWidth: {
+      120: '30rem',
+      64: '16rem'
+    }
+  },
   plugins: []
 }
