@@ -1,27 +1,27 @@
 import { defineStore } from 'pinia'
-import { Message } from '@/types/global'
+import { Notification } from '@/types/global'
 
 export const useBaseStore = defineStore('base', {
   state: () => {
     return {
       isLoading: false as boolean,
       contracts: [] as string[],
-      messages: [] as Message[],
-      fullscreenMessage: '' as string
+      notifications: [] as Notification[],
+      popupMessage: '' as string
     }
   },
   actions: {
     setContracts(contractNumber: string) {
       this.contracts.push(contractNumber)
     },
-    pushMessage(message: Message) {
-      this.messages.push(message)
+    pushNotification(notification: Notification) {
+      this.notifications.push(notification)
     },
-    removeMessage(messageIndex: number) {
-      this.messages.splice(messageIndex, 1)
+    removeNotification(notificationIndex: number) {
+      this.notifications.splice(notificationIndex, 1)
     },
-    setFullscreenMessage(message: string) {
-      this.fullscreenMessage = message
+    setPopupMessage(message: string) {
+      this.popupMessage = message
     }
   }
 })
