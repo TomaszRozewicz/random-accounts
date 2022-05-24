@@ -1,4 +1,4 @@
-# Random Accounts Project
+# Random Accounts
 ## About
 This project demonstrates a basic use case of smart contracts.
 
